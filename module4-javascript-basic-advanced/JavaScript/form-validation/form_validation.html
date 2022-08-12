@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/valid.js'></script>
+</head>
+<body>
+
+    <center>
+        <h1>Register Form</h1>
+        <form method="post" id="frm" name="frm" action="welcome.html" onsubmit="return v(this.value)">
+
+            Name <span style="color:red">*</span> :<input type="text" name="name" placeholder="Name *"><br><br>
+
+            
+            FirstName <span style="color:red">*</span> :<input type="text" name="fname" placeholder="FirstName *"><br><br>
+
+            
+            LastName <span style="color:red">*</span> :<input type="text" name="lname" placeholder="LastName *"><br><br>
+
+            
+            Email <span style="color:red">*</span> :<input type="text" name="email" placeholder="Email *"><br><br>
+
+            
+            Password <span style="color:red">*</span> :<input type="text" name="pass" placeholder="Password *"><br><br>
+
+
+            <input type="submit" name="sub" value="Register">
+            
+            <input type="reset" name="res" value="Reset">
+        </form>
+    </center>
+
+    
+</body>
+</html>

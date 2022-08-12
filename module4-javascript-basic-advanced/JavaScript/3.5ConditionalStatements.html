@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var now = new Date();
+    var dayOfWeek = now.getDay(); // Sunday - Saturday : 0 - 6
+
+    if(dayOfWeek == 5) {
+        alert("Have a nice weekend!");
+    }
+
+
+
+
+    var now = new Date();
+    var dayOfWeek = now.getDay(); // Sunday - Saturday : 0 - 6
+
+    if(dayOfWeek == 5) {
+        alert("Have a nice weekend!");
+    } else {
+        alert("Have a nice day!");
+    }
+
+
+
+    var now = new Date();
+    var dayOfWeek = now.getDay(); // Sunday - Saturday : 0 - 6
+
+    if(dayOfWeek == 5) {
+        alert("Have a nice weekend!");
+    } else if(dayOfWeek == 0) {
+        alert("Have a nice Sunday!");
+    } else {
+        alert("Have a nice day!");
+    }
+
+
+    var age = 21;
+    var userType = age < 18 ? 'Child' : 'Adult';
+    alert(userType); // Displays Adult
+</script>
+</html>

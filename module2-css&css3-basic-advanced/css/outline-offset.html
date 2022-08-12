@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Outline Offset</title>
+<style>
+    p, div{
+        margin: 50px;
+        padding: 30px;
+        background: #000;
+        outline: 2px solid red;
+        color: #fff;
+    }
+    p{
+        outline-offset: 10px;
+    }
+    div{
+        outline-offset: -15px;
+    }
+</style>
+</head>
+<body>
+    <p>Element with positive outline offset</p>
+    <div>Element with negative outline offset</div>
+</body>
+</html>

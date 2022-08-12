@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Digital-7 Mono;
+    src: url(digital-7.ttf);
+}
+body{
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    /* font-family: Digital-7 Mono; */
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+}
+.font-color{
+    background: linear-gradient(to bottom,white,aqua);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.content div{
+    padding: 5px 0;
+}
+.timeDiv{
+    position: relative;
+}
+#time{
+    text-shadow: 0 0 55px white;
+    font-size: 4.5rem;
+}
+#med{
+    position:absolute;
+    top: 15px;
+    right: 0;
+}
+.dayDiv{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.dayDiv span{
+    font-size: 0.9rem;
+    opacity: 0.4;
+    margin:0 4px;
+}

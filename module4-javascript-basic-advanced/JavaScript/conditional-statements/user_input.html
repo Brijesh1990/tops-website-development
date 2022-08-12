@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <script>
+
+        function ad()
+        {
+            let a=document.getElementById("a").value;
+            
+            let b=document.getElementById("b").value;
+            
+            if(a>b)
+            {
+                alert('A is greter than B')
+            }
+            else if(b>a)
+            {
+                alert('B is greter than A')
+            }
+            else 
+            {
+                alert('A & B both are equal numbers')
+            }
+        }
+
+    </script>
+
+    <center>
+    <form>
+        Enter a values :<input type="text" name="a" id="a" placeholder="Enter N1 values :" required><br><br>
+        Enter b values :<input type="text" name="b" id="b" placeholder="Enter N2 values :" required><br><br>
+        
+        <button type="button" onclick="ad()">Click to check</button>
+    </form>
+
+    </center>
+    
+</body>
+</html>

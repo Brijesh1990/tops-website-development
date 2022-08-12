@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        input[type="text"] {
+            border: 5px solid green;
+        }
+        /* [class="warning"] {
+            color: #fff;
+            background: orange;
+        } */
+        /* You can use the ~= operator to make an attribute selector matches any element whose attribute value is a list of space-separated values (like class="alert warning") , one of which is exactly equal to the specified value: */
+        [class~="warning"] {
+            color: #fff;
+            background: orange;
+        }
+        /* You can use the |= operator to make an attribute selector matches any element whose attribute has a hyphen-separated list of values beginning with the specified value: */
+        p[lang|=en] {
+            color: #fff;
+            background: blue;
+        }
+
+
+        /* a[href^="https://"] {
+            background: url("https://www.tutorialrepublic.com/examples/images/external.png") 100% 50% no-repeat;
+            padding-right: 15px;
+        } */
+        p[class^="aa"] {
+            background: url("https://www.tutorialrepublic.com/examples/images/external.png") 100% 50% no-repeat;
+            padding-right: 15px;
+        }
+        
+        a[href$=".pdf"] {
+            background: url("pdf.png") 0 50% no-repeat;
+            padding-left: 20px;
+        }
+
+
+
+        /* This selector in the example above matches all HTML elements with a class attribute that values contains warning. For example, it matches the elements having class values warning, alert warning, alert-warning or alert_warning etc. */
+        [class*="warning"] {
+            color: #fff;
+            background: red;
+        }
+        .border-img{
+            border: 15px solid transparent;
+            width: 100px;
+		    height: 100px;
+            /* border-image:url('https://www.tutorialrepublic.com//examples/images/border.png') 30 ; */
+            -webkit-border-image:url('https://www.tutorialrepublic.com//examples/images/border.png') 27 23 round space;
+            border-image:url('https://www.tutorialrepublic.com//examples/images/border.png') 27 23 round space;
+            /* source | slice | width | outset | repeat */
+
+        }
+        /* -webkit- (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+
+        -moz- (Firefox)
+
+        -o- (Old, pre-WebKit, versions of Opera)
+
+        -ms- (Internet Explorer and Microsoft Edge) */
+        /* <'border-image-source'>
+The source image. See border-image-source.
+<'border-image-slice'>
+The dimensions for slicing the source image into regions. Up to four values may be specified. See border-image-slice.
+<'border-image-width'>
+The width of the border image. Up to four values may be specified. See border-image-width.
+<'border-image-outset'>
+The distance of the border image from the element's outside edge. Up to four values may be specified. See border-image-outset.
+<'border-image-repeat'>
+Defines how the edge regions of the source image are adjusted to fit the dimensions of the border image. Up to two values may be specified. See border-image-repeat. */
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input type="radio">
+    <input type="text">
+    <p class="warning">Testing</p>
+    <p class="warning">Testing</p>
+    <p class="warning something">Testing</p>
+    <p class="warning-data">Testing</p>
+    <p lang="en">The style will apply to this paragraph.</p>
+    <p lang="en-us">The style will also apply to this paragraph.</p>
+    <p lang="us">The style will not apply to this paragraph.</p>
+
+
+    <br/>
+    <a href="opacity.html">Opacity Example</a>
+    <br/>
+    <a target="_blank" href="https://www.google.com/"> Click Me for redirecting another website</a>
+    <p class="aatest">somethi</p>
+    <p class="border-img">something</p>
+
+<input type="date" name="" id="">
+    <h3>border-image-source</h3>
+    <blockquote>
+        The source image. See border-image-source.
+    </blockquote>
+    <h3>
+        border-image-slice
+    </h3>
+    <blockquote>
+        The dimensions for slicing the source image into regions. Up to four values may be specified. See border-image-slice.
+    </blockquote>
+    <h3>
+        border-image-width
+    </h3>
+    <blockquote>
+        The width of the border image. Up to four values may be specified. See border-image-width.
+    </blockquote>
+    <h3>
+        border-image-outset
+    </h3>
+    <blockquote>
+        The distance of the border image from the element's outside edge. Up to four values may be specified. See border-image-outset.
+    </blockquote>
+    <h3>
+        border-image-repeat
+    </h3>
+    <blockquote>
+        Defines how the edge regions of the source image are adjusted to fit the dimensions of the border image. Up to two values may be specified. See border-image-repeat.
+    </blockquote>
+
+</body>
+</html>

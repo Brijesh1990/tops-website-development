@@ -1,0 +1,11 @@
+
+# design
+RewriteEngine On
+RewriteBase /jquery-isystkSlider/
+RewriteCond %{REQUEST_URI} !/jquery-isystkSlider/dist
+RewriteCond %{REQUEST_URI} !/jquery-isystkSlider/git-hook.php
+RewriteRule ^(.*)$ dist/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /jquery-isystkSlider/ [L,R=301]
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Show Hide Effects with Callback</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #F0E68C;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Display alert message after hiding paragraphs
+    $(".hide-btn").click(function(){
+        $("p").hide("slow", function(){
+            // Code to be executed
+            alert("The hide effect is completed.");
+        });
+    });
+    
+    // Display alert message after showing paragraphs
+    $(".show-btn").click(function(){
+        $("p").show("slow", function(){
+            // Code to be executed
+            alert("The show effect is completed.");
+        });
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="hide-btn">Hide Paragraphs</button> 
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <p>This is a paragraph.</p>
+</body>
+</html>

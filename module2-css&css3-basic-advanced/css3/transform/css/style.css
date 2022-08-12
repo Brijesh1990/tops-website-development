@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content 
+{
+    width: 40%;
+    height: 300px;
+    margin-left:30%;
+    position: absolute;
+    background-color: coral;
+    -webkit-transition: 2s ease all;
+    -moz-transition: 2s ease all;
+    -o-transition: 2s ease all;
+    transition: 2s ease all;
+}
+
+.content:hover 
+{
+    width: 40%;
+    height: 300px;
+    margin-left: 30%;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
+
+.content p 
+{
+    width: 80%;    
+    margin-top: 15%;
+    text-align: justify;
+    padding: 45px;
+    overflow: auto;
+    color: white;
+    word-wrap: break-word !important;
+    word-break: break-all;
+    overflow: auto;
+}
+
+
+

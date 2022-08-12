@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+
+        function clc()
+        {
+            document.getElementById("btn").style="background-color:red; color:white; font-size:15px; padding:8px;border:none; width:220px";
+            document.getElementById("btn1").style="background-color:red; color:white; font-size:15px; padding:8px;border:none; width:220px";
+            document.getElementById("btn2").style="background-color:red; color:white; font-size:15px; padding:8px;border:none; width:220px";
+            document.getElementById("btn3").style="background-color:red; color:white; font-size:15px; padding:8px;border:none; width:220px";
+        }
+
+        function add()
+        {
+            var a=parseInt(prompt("Enter a values :"));  //string
+            var b=parseInt(prompt("Enter b values :"));  //string
+            var c=a+b;
+            alert('Additions of Numbers is :'+c);
+        }
+        
+        function mult()
+        {
+            var a=parseInt(prompt("Enter a values :"));  //string
+            var b=parseInt(prompt("Enter b values :"));  //string
+            var c=a*b;
+            alert('Multiplications of Numbers is :'+c);
+        }
+
+        
+        function subs()
+        {
+            var a=parseInt(prompt("Enter a values :"));  //string
+            var b=parseInt(prompt("Enter b values :"));  //string
+            var c=a-b;
+            alert('Substractions of Numbers is :'+c);
+        }
+
+        
+        function dv()
+        {
+            var a=parseInt(prompt("Enter a values :"));  //string
+            var b=parseInt(prompt("Enter b values :"));  //string
+            var c=a/b;
+            alert('Divisions of Numbers is :'+c);
+        }
+      
+    </script>
+</head>
+<body onload="clc()">
+<center>
+    <h1 align="center">Calculator</h1>
+    <hr style="border: solid 2px black; width:70%">
+    <button type="button" id="btn" onclick="add()">Additions Numbers</button>
+    <button type="button" id="btn1" onclick="mult()">Multiplications Numbers</button>
+    <button type="button" id="btn2" onclick="subs()">Substractions Numbers</button>
+    <button type="button" id="btn3" onclick="dv()">Divisions Numbers</button>
+    </center>
+
+</body>
+</html>

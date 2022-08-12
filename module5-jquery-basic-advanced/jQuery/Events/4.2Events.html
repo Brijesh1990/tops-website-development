@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        // Code to be executed
+        alert("Hello World!");
+
+        $("p").click(function(){
+            $(this).slideUp();
+        });
+
+
+        $("p").dblclick(function(){
+            $(this).slideUp();
+        });
+
+
+        $("p").hover(function(){
+            $(this).addClass("highlight");
+        }, function(){
+            $(this).removeClass("highlight");
+        });
+
+
+        $("p").mouseenter(function(){
+            $(this).addClass("highlight");
+        });
+
+        $("p").mouseleave(function(){
+            $(this).removeClass("highlight");
+        });
+
+
+        var i = 0;
+        $('input[type="text"]').keypress(function(){
+            $("span").text(i += 1);
+            $("p").show().fadeOut();
+        });
+
+        var i = 0;
+        $('input[type="text"]').keydown(function(){
+            $("span").text(i += 1);
+            $("p").show().fadeOut();
+        });
+
+
+        var i = 0;
+        $('input[type="text"]').keyup(function(){
+            $("span").text(i += 1);
+            $("p").show().fadeOut();
+        });
+    });
+
+   
+
+    
+</script>
+</html>

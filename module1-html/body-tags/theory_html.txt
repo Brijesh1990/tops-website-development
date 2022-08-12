@@ -1,0 +1,114 @@
+web browser : A web browser is used to search any content on web.
+       ex: IE,Firfox,chrome,safari,opera  
+
+web server : A web server is used to opt request from web browser and send reponse on web server.
+
+   ex: internet 
+
+website: A collection of webpages i.e called website.
+           or 
+         A collections of information i.e called website.
+
+Types of website:There are 2 types of website 
+             a) static website 
+             b) dynamic website
+             
+a)static website : A static website is a collection of webpages i.e used to create collection of information but user can not modify or chnage anything after create website.
+
+        ex: designer always create a static website using html,html5,css,css3,mediaqury,javascript,jquery and bootstrap.
+
+
+b)dynamic website : A synamic website is a collection of webpages i.e used to create collection of information but after create website user can change or modify anything in website.
+
+         user can add user | product | register | login 
+        ex: php,asp.net,python,android 
+
+www : www stands for world wide web.
+       URL : https://www.flipkart.com/
+
+     www open  website on internet on wolrd wide.   
+       
+URL : a URL stands for universal resource locator or website URL.   
+
+Types of URL :there are 2 types of url 
+              a) asbolute url 
+              ex:https://www.flipkart.com/
+                https://www.amazon.in/
+
+              b) relative url 
+
+              ex:https://www.flipkart.com/aboutus
+
+
+ protocol : A protocol is used to set of rules 
+           ex: http 
+               https 
+                 
+               https://www.flipkart.com/  
+               https://www.flipkart.com/aboutus
+               http://www.krutionella.com/
+
+             http: stands for hypertext transfer protocol 
+              ex: http open i.e nor secured on server 
+
+             https : stands for secured hypertext tansfer protocol 
+              ex: fully secured server    
+
+
+
+HTML: stands for hypertext markup language 
+      html first time release in 1986 by tim berner lee.
+      html is not any language but its a markup language.
+      html is used to create a webpages or home page for any website.
+      html is a case insentive markup language.
+      ex: <html></html> or <HTML></HTML>
+
+     html provides file extentions .htm or .html
+     html load content on web broswer.
+     html create a static website.
+     html is create webpages and called client seide markup language.
+
+
+Hypertext: A hypertext meanse redirect one page to another page i.e called hypertext
+
+       ex: <a href="https://www.facebook">open facebook</a> 
+
+       ex:  <a href="https://www.facebook.com" target="_blank">Open Facebook</a>
+          <br>
+         <a href="https://www.instagram.com" target="_blank">Open Instagram</a>
+
+
+
+Markup language :markup meanse markup with more than one langauge itself to create its webpages or desing its webpages.
+
+
+html structure : 
+structure.html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link>
+        <style></style>
+        <meta>
+        <script></script>
+        <noscript></noscript>
+    </head>
+    <body>
+        <h1>About us</h1>
+    </body>
+</html>
+HTML tags or html element :
+
+       a) paragraph : provides a paragraph in body and denoted by <p> This is a paragraph tag </p>
+
+    b) marquee : provides a slide effects in paragraph, heading <marquee>  </marquee>
+
+
+   c) heading : provides a heading  in body and denoted by <h1> to <h6>
+
+   d) bold : provides a bold font size   in body and denoted by <b> This is brijesh </b>
+
+   e) anchor tag : anchor tag is used to provide a link and denoted by <a> </a>
+

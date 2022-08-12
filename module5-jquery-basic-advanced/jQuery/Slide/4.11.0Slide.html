@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Slide-Up and Slide-Down Effects</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #B0C4DE;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Slide up displayed paragraphs
+    $(".up-btn").click(function(){
+        $("p").slideUp();
+    });
+    
+    // Slide down hidden paragraphs
+    $(".down-btn").click(function(){
+        $("p").slideDown();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="up-btn">Slide Up Paragraphs</button> 
+    <button type="button" class="down-btn">Slide Down Paragraphs</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</body>
+</html>

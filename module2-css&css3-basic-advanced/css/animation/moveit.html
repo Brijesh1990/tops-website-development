@@ -1,0 +1,95 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Translate Animation</title>
+<style>
+    .box {
+        
+        width:500px;
+        height:403px;
+        background: url("../yClqv.png") ;
+        position: relative;
+        animation: moveit 2s infinite;
+    }
+     
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes moveit {
+        from {left: 0;}
+        to {left: 50%;}
+    }
+     
+    /* Standard syntax */
+    @keyframes moveit {
+        from {left: 0;}
+        to {left: 50%;}
+    }
+</style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>                             -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            margin-top: 50%;
+            background: red;
+            position: relative;
+            /* Chrome, Safari, Opera */
+            /* -webkit-animation: repeatit 2s linear 0s infinite alternate; */
+            /* Standard syntax */
+            /* animation: repeatit 2s linear 0s infinite; */
+            animation: repeatit 2s linear 0s infinite alternate;
+        }
+ 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes repeatit {
+    from {left: 0;}
+    to {left: 50%;}
+}
+ 
+/* Standard syntax */
+@keyframes repeatit {
+    from {left: 0;}
+    to {left: 50%;}
+}
+        .box {
+            margin: 50px;
+            width:500px;
+            height:480px;
+            background: url("../yClqv.png");
+            position: relative;
+            animation: moveit 2s infinite;
+        }
+        @keyframes moveit{
+            from {left:0;}
+            to {left:50%;}
+            12.5% {left: -50px;}
+            25% {left: 50px;}
+            37.5% {left: -25px;}
+            50% {left: 25px;}
+            62.5% {left: -10px;}
+            75% {left: 10px;}
+        } */
+        /* @keyframes moveit {
+        from {left: 0;}
+        to {left: 50%;}
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

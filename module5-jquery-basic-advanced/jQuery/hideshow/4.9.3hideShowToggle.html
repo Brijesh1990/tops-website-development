@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Animated Toggle Effect</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #F0E68C;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Toggles paragraphs with different speeds
+    $(".toggle-btn").click(function(){
+        $("p.normal").toggle();
+        $("p.fast").toggle("fast");
+        $("p.slow").toggle("slow");
+        $("p.very-fast").toggle(50);
+        $("p.very-slow").toggle(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Toggle Paragraphs</button>
+    <p class="very-fast">This paragraph will show/hide with very fast speed.</p>
+    <p class="normal">This paragraph will show/hide with default speed.</p>
+    <p class="fast">This paragraph will show/hide with fast speed.</p>
+    <p class="slow">This paragraph will show/hide with slow speed.</p>
+    <p class="very-slow">This paragraph will show/hide with very slow speed.</p>
+</body>
+</html>                                		

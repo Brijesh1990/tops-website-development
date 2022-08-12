@@ -1,0 +1,237 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+/* loader */
+#Main
+{
+    display: none;
+}
+#loader 
+{
+    width: 500px;
+    height: 400px;
+    background: url('../images/loader2.gif') no-repeat;
+    background-size: 500px 400px;
+    top: 5%;
+    margin-top: 3%;
+    margin-left: 30%;
+}
+.fitness-header
+{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.fitness-logo
+{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.fitness-logo h1 
+{
+    font-size: 45px;
+    letter-spacing: 1px;
+
+}
+.fitness-logo p 
+{
+    font-weight: 100;
+    margin-top: -5% !important;
+}
+
+.fitness-toll-free 
+{
+    float: right;
+}
+.fitness-toll-free,h5 
+{
+    font-weight: 100;
+    margin-top: 5% !important;
+    letter-spacing: 1px;
+}
+
+.fitness-navbar
+{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 0px;
+    margin-left: 10%;
+}
+
+.clearfix
+{
+    clear: both !important;
+}
+.navbar-link li 
+{
+    display: inline-block;
+    padding: 12px 10px;
+}
+.navbar-link li a 
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.active
+{
+    padding: 6px 6px;
+    background-color: black;
+    color: white !important;
+    border-radius: 6px;
+}
+
+.fitness-slider 
+{
+    width: 80%;
+    height: 350px;
+    margin-left: 10%;
+}
+.fitness-slider img 
+{
+    width: 100%;
+    height: 350px;
+    filter: brightness(90%);
+}
+
+.fitness-content
+{
+    width: 80%;
+    height: 720px;
+    background-color: white;
+    border-radius: 2px;
+    margin-left: 10%;
+}
+.fitness-content h1{
+    letter-spacing: 1px;
+    color: chocolate;
+    text-align: center;
+    padding: 5px;
+}
+.fitness-content hr
+{
+    border: solid 2px chocolate;
+    width: 40%;
+    margin-top: -2%;
+}
+
+.fitness-content img 
+{
+    width: 80%;
+    height: 220px;
+    margin-left: 10%;
+}
+
+.fitness-signup 
+{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-left: 8%;
+    font-weight: 200 !important;
+}
+input,select 
+{
+    width: 250px;
+    height: auto;
+    padding: 9px;
+    background-color: lightgray !important;
+    border: none;
+    margin-top: 5%;
+}
+
+#btn
+{
+    width: 220px;
+    height: auto;
+    padding: 8px;
+    background-color:green !important;
+    color: white;
+    border: none;
+    margin-left: 12%;
+}
+.fitness-signup  h3 
+{
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.fitness-map
+{
+    width: 52%;
+    height: auto;
+    float: left;
+}
+
+.fitness-map h3 
+{
+    font-weight: 600;
+}
+
+.fitness-footer 
+{
+    width: 80%;
+    height: 210px;
+    margin-left: 10%;
+    padding: 0;
+    background-color: black !important;
+    margin-top: 2% !important;
+    color: white;
+    
+}
+.fitness-footer h1,h5,p 
+{
+    padding: 8px;
+}
+.fitness-footer,p 
+{
+    margin-top: -1%;
+    float: left;
+
+}
+
+.fitness-about-us
+{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    padding: 0;
+
+}
+
+.fitness-content-gallery
+{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+    margin-left: 10%;
+}
+.fitness-content-gallery img 
+{
+    margin-left: 5% !important;
+    padding: 5px !important;
+
+}
+
+.fitness-content-gallery h1{
+    letter-spacing: 1px;
+    color: chocolate;
+    text-align: center;
+    padding: 5px;
+}
+.fitness-content-gallery hr
+{
+    border: solid 2px chocolate;
+    width: 40%;
+    margin-top: -2%;
+}

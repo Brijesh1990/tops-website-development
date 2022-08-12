@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Animation with Pre-defined Values</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    .box{
+        width: 80%;
+        height: 200px;
+        background: #9d7ede;
+        margin-top: 30px;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".box").animate({
+            width: 'toggle'
+        });
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button">Toggle Animation</button>
+    <div class="box"></div>
+</body>
+</html>

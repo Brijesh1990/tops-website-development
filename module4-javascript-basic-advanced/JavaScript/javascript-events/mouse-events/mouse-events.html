@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+  
+    <script>
+        function ch()
+        {
+            document.getElementById("imgg").src="images/on.jpg";
+        }
+        
+        function chh()
+        {
+            document.getElementById("imgg").src="images/onn.jpg";
+        }
+
+    </script>
+    <center>
+    <img src="images/on.jpg" width="200px" height="250px" id="imgg">
+    <br><br>
+    <button type="button" id="btn1" onclick="chh()">ON</button>
+    <button type="button" id="btn2" onclick="ch()">OFF</button>
+
+
+    </center>
+
+</body>
+</html>

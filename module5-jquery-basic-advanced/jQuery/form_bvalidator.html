@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/gray.css'>
+    <script src='js/jquery.js'></script>
+    <script src='js/jquery.bvalidator.min.js'></script>
+    <script src='js/default.min.js'></script>
+    <script src='js/gray.js'></script>
+    <script src='js/bvalid.js'></script>
+</head>
+<body bgcolor="orange">
+
+    <h1 align="center">Form bvalidator</h1>
+    <hr>
+
+    <form method="post" action="welcome.html" id="frm">
+    <table align="center" cellpadding="8" cellspacing="8">
+
+        <tr>
+            <th>FirstName <span style="color:red">*</span></th>
+            <td><input type="text" name="fnm" placeholder="FirstName *" data-bvalidator="required,alpha"></td>
+        </tr>
+
+        
+        <tr>
+            <th>LastName <span style="color:red">*</span></th>
+            <td><input type="text" name="lnm" placeholder="LastName *" data-bvalidator="required,alpha"></td>
+        </tr>
+
+        
+        <tr>
+            <th>Email <span style="color:red">*</span></th>
+            <td><input type="text" name="email" placeholder="Email *" data-bvalidator="required,email"></td>
+        </tr>
+
+        
+        <tr>
+            <th>Password <span style="color:red">*</span></th>
+            <td><input type="password" name="pass" placeholder="Password *" data-bvalidator="required,minlen[4],maxlen[10]"></td>
+        </tr>
+
+        
+        <tr>
+            <th>Re-Enter Password <span style="color:red">*</span></th>
+            <td><input type="password" name="cpass" placeholder="Re-Enter Password *" data-bvalidator="required,minlen[4],maxlen[10]"></td>
+        </tr>
+
+        
+        <tr>
+            <th>Mobile <span style="color:red">*</span></th>
+            <td><input type="text" name="mob" placeholder="Mobile *" data-bvalidator="required,minlen[10],maxlen[10],digit"></td>
+        </tr>
+
+        
+        <tr>
+            <th>Gender <span style="color:red">*</span></th>
+            <td>Male <input type="radio" name="gender" value="male" data-bvalidator="required">
+                Female <input type="radio" name="gender" value="female">
+            </td>
+        </tr>
+
+        
+        <tr>
+            <th>Hobby <span style="color:red">*</span></th>
+            <td>Reading <input type="checkbox" name="chk[]" value="reading">
+                Playing <input type="radio" name="chk[]" value="play">
+            </td>
+        </tr>
+
+
+            
+        <tr>
+            <th>Upload photo <span style="color:red">*</span></th>
+            <td><input type="file" name="img" placeholder=" *" data-bvalidator="required"></td>
+        </tr>
+
+              
+        <tr>
+            <th>Select State <span style="color:red">*</span></th>
+            <td><select name="state" placeholder=" *" data-bvalidator="required">
+                <option value="">Select state</option> 
+                <option value="gujrat">Gujrat</option> 
+                </select>
+            </td>
+        </tr>
+
+                
+        <tr>
+            <th>Select City <span style="color:red">*</span></th>
+            <td><select name="city" placeholder=" *" data-bvalidator="required">
+                <option value="">Select city</option> 
+                <option value="rajkot">Rajkot</option> 
+                </select>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            
+            <td><input type="submit" name="sub" value="Register">
+                <input type="reset" name="res" value="Reset">
+            </td>
+        </tr>
+
+        
+
+    </table>
+
+</form>
+    
+</body>
+</html>

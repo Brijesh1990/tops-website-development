@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Defining function
+    function sayHello() {
+        alert("Hello, Jay Amin here!");
+    }
+    
+    // Calling function
+    sayHello(); // 0utputs: Hello, Jay Amin here!
+
+    // Adding Parameters to Functions
+    // Defining function
+    function displaySum(num1, num2) {
+        var total = num1 + num2;
+        alert(total);
+    }
+    
+    // Calling function
+    displaySum(6, 20); // 0utputs: 26
+    displaySum(-5, 17); // 0utputs: 12
+
+
+    // Default Values for Function Parameters ES6
+    function sayHello(name = 'Guest') {
+        alert('Hello, ' + name);
+    }
+
+    sayHello(); // 0utputs: Hello, Guest
+    sayHello('Jay'); // 0utputs: Hello, Jay
+
+    function sayHello(name) {
+        var name = name || 'Guest'; 
+        alert('Hello, ' + name);
+    }
+
+    sayHello(); // 0utputs: Hello, Guest
+    sayHello('Jay'); // 0utputs: Hello, Jay
+
+
+    // Returning Values from a Function
+
+
+    // Defining function
+    function getSum(num1, num2) {
+        var total = num1 + num2;
+        return total;
+    }
+    
+    // Displaying returned value
+    alert(getSum(6, 20)); // 0utputs: 26
+    alert(getSum(-5, 17)); // 0utputs: 12
+
+    // Defining function
+    function divideNumbers(dividend, divisor){
+        var quotient = dividend / divisor;
+        var arr = [dividend, divisor, quotient];
+        return arr;
+    }
+    
+    // Store returned value in a variable
+    var all = divideNumbers(10, 2);
+    
+    // Displaying individual values
+    alert(all[0]); // 0utputs: 10
+    alert(all[1]); // 0utputs: 2
+    alert(all[2]); // 0utputs: 5
+
+    // Working with Function Expressions
+    // Function Declaration
+    function getSum(num1, num2) {
+        var total = num1 + num2;
+        return total;
+    }
+    
+    // Function Expression
+    var getSum = function(num1, num2) {
+        var total = num1 + num2;
+        return total;
+    };
+
+
+    var getSum = function(num1, num2) {
+        var total = num1 + num2;
+        return total;
+    };
+    
+    alert(getSum(5, 10)); // 0utputs: 15
+    
+    var sum = getSum(7, 25);
+    alert(sum); // 0utputs: 32
+
+    declaration(); // Outputs: Hi, I'm a function declaration!
+    function declaration() {
+        alert("Hi, I'm a function declaration!");
+    }
+    
+    expression(); // Uncaught TypeError: undefined is not a function
+    var expression = function() {
+        alert("Hi, I'm a function expression!");
+    };
+</script>
+</html>

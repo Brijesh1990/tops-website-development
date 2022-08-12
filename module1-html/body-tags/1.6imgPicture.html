@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="image/1.png" alt="Flying Kites" style="width: 300px; height: 300px;">
+    <img src="image/1.png" alt="Cloudy Sky" style="width: 250px; height: 150px;">
+    <img src="image/1.png" alt="Balloons" style="width: 200px; height: 200px;">
+    
+    
+    <picture>
+        <source media="(min-width: 1000px)" srcset="image/1.png">
+        <source media="(max-width: 500px)" srcset="image/planets.gif">
+        <img src="image/1.png" alt="My logo">
+    </picture> 
+    
+    <img src="image/1.png" usemap="#objects" alt="Objects">
+<map name="objects">
+    <area shape="circle" coords="137,231,71" href="clock.html" alt="Clock">
+    <area shape="poly" coords="363,146,273,302,452,300" href="sign.html" alt="Sign">
+    <area shape="rect" coords="520,160,641,302" href="book.html" alt="Book">
+</map>
+</body>
+</html>

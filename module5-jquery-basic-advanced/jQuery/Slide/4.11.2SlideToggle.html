@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Slide-Toggle Effect</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #B0C4DE;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Toggles paragraphs display with sliding
+    $(".toggle-btn").click(function(){
+        $("p").slideToggle();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Slide Toggle Paragraphs</button> 
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</body>
+</html>

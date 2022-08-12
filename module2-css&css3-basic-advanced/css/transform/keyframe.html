@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            animation: spinner5 2s ease-in-out 3s infinite ;
+            /* transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1); */
+        }
+         @keyframes spinner5 {
+            from,15% { transform:matrix(0, 0, 0, 2, 55, 50)   }
+            20%,35%  { transform:matrix(2, 0, 2, 2, 55, 50)  }
+            40%,55%  { transform:matrix(4, 0, 4, 2, 55, 50) }
+            60%,75%  { transform:matrix(2, 0, 2, 2, 55, 50) }
+            80%,95%  { transform:matrix(0, 0, 0, 2, 55, 50) }
+            to       { transform:matrix(-2, 0, -2, 2, 55, 50) }
+        }
+
+        /* all other browsers */
+        /* @keyframes spinner5 {
+        from,15% {
+            transform: rotateY(0);
+        }
+        20%,35%  {
+            -moz-transform: rotateY(-72deg);
+            -ms-transform: rotateY(-72deg);
+            transform: rotateY(-72deg);
+        }
+        40%,55%  {
+            -moz-transform: rotateY(-144deg);
+            -ms-transform: rotateY(-144deg);
+            transform: rotateY(-144deg);
+        }
+        60%,75%  {
+            -moz-transform: rotateY(-216deg);
+            -ms-transform: rotateY(-216deg);
+            transform: rotateY(-216deg);
+        }
+        80%,95%  {
+            -moz-transform: rotateY(-288deg);
+            -ms-transform: rotateY(-288deg);
+            transform: rotateY(-288deg);
+        }
+        to {
+            -moz-transform: rotateY(-360deg);
+            -ms-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+        }
+    } */
+    </style>
+</head>
+<body>
+    <div class="box">
+    	<img src="../yClqv.png" alt="Mushroom">
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Executing a Function on Resize Event in jQuery</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 20px;
+        font: 20px sans-serif;
+        background: #f0e68c;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(window).resize(function() {
+        $(window).bind("resize", function(){ 
+            $("p").text("Window width: " + $(window).width() + ", " + "Window height: " + $(window).height());
+        });
+    });
+});
+</script>
+</head> 
+<body>
+    <p>Open the output in a new tab and resize the browser window by dragging the corners.</p>
+</body>
+</html>

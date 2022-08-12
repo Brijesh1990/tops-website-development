@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // addition
+let left = 2;
+let right = 2;
+let result = left + right;
+console.log(result);
+left = 4;
+right = 4;
+result = left + right;
+console.log(result);
+// output
+// 4
+// 8
+
+
+// subtraction
+let left = 2;
+let right = 1;
+let result = left - right;
+console.log(result);
+left = 4;
+right = 2;
+result = left - right;
+console.log(result);
+// output
+// 1
+// 2
+
+// multiplication
+let left = 2;
+let right = 1;
+let result = left * right;
+console.log(result);
+left = 4;
+right = 2;
+result = left * right;
+console.log(result);
+// output
+// 2
+// 8
+
+
+
+// division
+let left = 2;
+let right = 1;
+let result = left / right;
+console.log(result);
+left = 4;
+right = 2;
+result = left / right;
+console.log(result);
+// output
+// 2
+// 2
+
+
+// logical
+let user = {
+    name: 'John',
+    isAdmin: true,
+    isActive : true
+};
+if(user.isAdmin === true && user.isActive === true) {
+    console.log('User has admin access');
+} else {
+    console.log('User dont have admin access');
+}
+// output
+// User has admin access
+
+
+
+// logical
+let user = {
+    name: 'John',
+    isAdmin: true,
+    isActive : false
+};
+if(user.isAdmin === true || user.isActive === true) {
+    console.log('User has admin access');
+} else {
+    console.log('User dont have admin access');
+}
+// output
+// User has admin access
+
+
+
+
+let number = 1;
+let string = 'Name';
+let isAdmin = true;
+let user = {
+    name: 'John'
+};
+console.log(typeof number);
+console.log(typeof string);
+console.log(typeof isAdmin);
+console.log(typeof user);
+// out put
+// number
+// string
+// boolean
+// object
+
+let user = {
+    name: 'John',
+    isAdmin: true,
+    isActive : false
+};
+let doesUserHasAccess = user.isAdmin ? 'User has admin access' : 'User doesnt have admin access'; 
+console.log(doesUserHasAccess);
+// output
+// User has admin access
+let user = {
+    name: 'John',
+    isAdmin: false,
+    isActive : false
+};
+let doesUserHasAccess = user.isAdmin ? 'User has admin access' : 'User doesnt have admin access'; 
+console.log(doesUserHasAccess);
+// output
+// User doesnt have admin access
+</script>
+</html>

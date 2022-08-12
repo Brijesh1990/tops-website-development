@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example of CSS display</title>
+  <style>
+    /* .dispNone{
+      display: none;
+    }
+    .VisNone{
+      visibility: hidden;
+    } */
+  </style>
+</head>
+<body>
+  
+    <span class="Test">This span element and its parent div element generate an inline-block box.</span>
+    <img src="tenor.gif" id="imghide" alt="">
+    <span>This span element and its parent div element generate an inline-block box.</span>
+
+    <button onclick="hideMeRemoveSpace()">Hide Me With Remove Space</button>
+    <button onclick="hideMe()">HideMe Without Remove Space</button>
+    
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+   function hideMe() {
+     $("#imghide").css("visibility","hidden");
+   }
+   function hideMeRemoveSpace() {
+     $("#imghide").css("display","none");
+     $(".Test").css("color","blue");
+   }
+</script>
+</html> 

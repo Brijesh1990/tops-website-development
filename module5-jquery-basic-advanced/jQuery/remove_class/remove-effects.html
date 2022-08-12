@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+    <script src='js/jquery.js'></script>
+    <script src='js/cycle.min.js'></script>
+    <!-- slider code in jquery -->
+
+    <script>
+        $(document).ready(function()
+        {
+
+            $("#slide").cycle("fade,zoom,shuffle,turnLeft,turnRight");
+
+        });
+
+    </script>
+
+    <script>
+       $(document).ready(function()
+       
+       {
+         
+        $("#add").click(function(){
+         
+        $("#login").fadeToggle(3000); 
+    
+      });
+    
+    
+    $("#cls").click(function(){
+         
+         $("#login").fadeToggle(3000);
+          
+     });
+    
+     $("#del").click(function()
+     {
+
+        $("#crt").remove();
+     })
+    
+    
+    });
+   </script>
+
+
+
+   <style>
+       .content 
+       {
+           width: 60%;
+           height: auto;
+           margin: auto;
+           background-color: aqua;
+           padding: 20px;
+
+       }
+   </style>
+</head>
+<body>
+ <h2 id="add" align="right">Click for login</h2>
+<!-- slider start here -->
+
+<div id="slide">
+<img src="images/s.jpg">
+<img src="images/s1.jpg">
+<img src="images/s2.jpg">
+<img src="images/s3.jpg">
+</div>
+ <div id="login">
+    <h2 id="cls" align="right" style="color: red;">&times;</h2>
+    <form>
+        <input type="text" name="em" placeholder="Email *" required>
+        <br><br>
+        <input type="password" name="pass" placeholder="Password *" required>
+        <br><br>
+        <input type="submit" name="sub" value="Login">
+        <b><a href="">Forget Password ?</a></b>
+    </form>
+</div>
+
+
+<div id="crt">
+    <h2 style="margin-left:17%">View Cart(1)</h2>
+    <hr style="border: solid 1px black; width:70%;">
+    <table align="center" width="70%"  cellpadding="5" cellspacing="5">
+        <tr>
+            <th>Id</th>
+            <th>Pimage</th>
+            <th>Pname</th>
+            <th>Qty</th>
+            <th>price</th>
+            <th>Subtotal</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td><img src="https://images.unsplash.com/photo-1593548366595-c449f72ccb3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHVtYSUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" style="width: 200px; height: 100px;"></td>
+            <td>Puma shoes</td>
+            <td><input type="number" min="1" max="5" value="1"></td>
+            <td>Rs.2500-/</td>
+            <td>Rs.2500-/</td>
+            <td align="center"><span><a href="#" style="font-size: 25px; color:red; font-weight: bold;" id="del">&times;</a></span></td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>

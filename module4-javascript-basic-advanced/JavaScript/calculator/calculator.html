@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator in javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/calc.js'></script>
+</head>
+<body>
+
+    <div class="table-responsive">
+    <table width="100%">
+       <tr>
+           <td><caption>Clculator</caption></td>
+       </tr> 
+        <tr>
+            <td colspan="4"><input type="text" name="result" id="result" placeholder="0" style="width: 96%; padding:5px"></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" value="1" id="display" onclick="return disp(this.value)">1</button></td>
+            <td><button type="button" value="2" id="display" onclick="return disp(this.value)">2</button></td>
+            <td><button type="button" value="3" id="display" onclick="return disp(this.value)">3</button></td>
+            <td><button type="button" value="clr" id="display" onclick="return clr(this.value)">C</button></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" value="4" id="display" onclick="return disp(this.value)">4</button></td>
+            <td><button type="button" value="5" id="display" onclick="return disp(this.value)">5</button></td>
+            <td><button type="button" value="6" id="display" onclick="return disp(this.value)">6</button></td>
+            <td><button type="button" value="+" id="display" onclick="return disp(this.value)">+</button></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" value="7" id="display" onclick="return disp(this.value)">7</button></td>
+            <td><button type="button" value="8" id="display" onclick="return disp(this.value)">8</button></td>
+            <td><button type="button" value="9" id="display" onclick="return disp(this.value)">9</button></td>
+            <td><button type="button" value="-" id="display" onclick="return disp(this.value)">-</button></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" value="0" id="display" onclick="return disp(this.value)">0</button></td>
+            <td><button type="button" value="*" id="display" onclick="return disp(this.value)">*</button></td>
+            <td><button type="button" value="/" id="display" onclick="return disp(this.value)">/</button></td>
+            <td><button type="button" value="*" id="display" onclick="return disp(this.value)">*</button></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" value="CE" id="display" onclick="return disp(this.value)">CE</button></td>
+            <td><button type="button" value="." id="display" onclick="return disp(this.value)">.</button></td>
+            <td><button type="button" value="+=" id="display" onclick="return disp(this.value)">+=</button></td>
+            <td><button type="button" value="=" id="display" onclick="return finalresult(this.value)">=</button></td>
+        </tr>
+
+    </table>
+
+    </div>
+
+    <div class="us">
+        <img src="images/user.png">
+    </div>
+    
+
+</body>
+</html>

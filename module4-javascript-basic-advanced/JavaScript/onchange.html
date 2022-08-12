@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Product Price</h1>
+    <table>
+      <tr>
+        <td>Product Price</td>
+        <td>
+          <input type="text" value="1200" id="itemvalue" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td>Qty</td>
+        <td>
+          <select onchange="productQty()" id="productQuantity">
+            <option id="disable" value="0">---select---</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Total Price</td>
+        <td>
+          <span id="totalAmount"></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button>Buy Now</button>
+        </td>
+      </tr>
+    </table>
+    <script>
+      function productQty() {
+        var itemvalue = parseInt(document.getElementById("itemvalue").value);
+        var productQuantity = parseInt(
+          document.getElementById("productQuantity").value
+        );
+        var disable = document.getElementById("disable");
+        var totalAmount = document.getElementById("totalAmount");
+        console.log(itemvalue);
+        disable.disabled = true;
+        var totalPrice = itemvalue * productQuantity;
+        totalAmount.innerHTML = totalPrice;
+      }
+    </script>
+  </body>
+</html>

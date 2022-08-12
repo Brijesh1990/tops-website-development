@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Show Hide Effects</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #F0E68C;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Hide displayed paragraphs
+    $(".hide-btn").click(function(){
+        $("p").hide();
+    });
+    
+    // Show hidden paragraphs
+    $(".show-btn").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="hide-btn">Hide Paragraphs</button> 
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html ul li h1 h2 h3 h4 h5 h6 
+{
+    margin: 0;
+    padding: 0;
+}
+.header 
+{
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    padding: 5px;
+    background-color: #ffc038;
+    z-index: 5 !important;
+}
+
+.header-top 
+{
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    padding: 5px;
+    background-color: #ffc038;
+    z-index: 5 !important;
+}
+.navbar-brand
+{
+    width: 25%;
+    height: auto;
+    margin: auto;
+}
+.navbar 
+{
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 5 !important;
+    box-shadow: 0px 1px lightgray;
+    background-color: #ffc038;
+
+
+}
+.navbar-link li 
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navbar-link a
+{
+    font-weight: bold;
+    color: #464646;
+    font-weight: 600;
+} 
+
+.slider 
+{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.content 
+{
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+
+}
+
+.view-more
+{
+    background-color: #ffc038 !important;
+}
+
+.our-history
+{
+    width: 100%;
+    height: 450px;
+    background: url('../images/background-recatngle.png') no-repeat;
+    background-size: 100% 450px;
+
+}
+
+
+.footer-link  li 
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+.footer-link a 
+{
+    color: white;
+}
+
+.bi-facebook,.bi-instagram,.bi-linkedin,.bi-whatsapp,.bi-youtube,.bi-google
+{
+    width: auto;
+    height: auto;
+    background-color: #ffc038;
+    color: black;
+    padding: 10px;
+    letter-spacing: 4px;
+    border-radius: 3px;
+}
+
+
+/* mobile resulations */
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .navbar-link li 
+    {
+        display:block;
+        padding: 0px 20px;
+    }
+
+    .slider 
+{
+    max-width: 100%;
+    width: 100%;
+    height: 150px;
+    z-index: 5;
+    font-size: 12px !important;
+}
+}
+
+
+/* table resulations */
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+
+}
+
+
+
+/* large laptop resulations */
+@media only screen and (min-width:769px) and (max-width:1024px)
+{
+
+}
+
+
+
+/* large device resulations */
+@media only screen and (min-width:1025px) and (max-width:1201px)
+{
+
+}
+
+
+

@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content 
+{
+    width: 30%;
+    height: 300px;
+    margin-left: 35%;
+    background-color: coral;
+    -webkit-transition: 2s ease all;
+    -moz-transition: 2s ease all;
+    -o-transition: 2s ease all;
+    transition: 2s ease all;
+}
+
+.content:hover 
+{
+    width: 40%;
+    height: 350px;
+    margin-left: 30%;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.content h1 
+{
+    margin-left: 6%;
+    margin-top: 9%;
+    position: absolute;
+}
+
+
+.content h1:hover 
+{
+    margin-left: 15% !important;
+    margin-top: 10% !important;
+    position: absolute !important;
+    color: white;
+}

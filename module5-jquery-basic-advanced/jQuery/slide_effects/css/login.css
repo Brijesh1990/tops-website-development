@@ -1,0 +1,39 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#add 
+{
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    color: white;
+}
+#login
+{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: none;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+}
+
+form 
+{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+input[type="text"],input[type="password"]
+{
+    width: 300px;
+    height: auto;
+    padding: 7px;
+}

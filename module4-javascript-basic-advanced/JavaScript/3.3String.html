@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var myString = 'Hello World!'; // Single quoted string
+    var myString = "Hello World!"; // Double quoted string
+
+    var str1 = "it's okay";
+    var str2 = 'He said "Goodbye"';
+    var str3 = "She replied 'Calm down, please'";
+    var str4 = 'Hi, there!"; // Syntax error - quotes must match
+
+    var str1 = 'it\'s okay';
+    var str2 = "He said \"Goodbye\"";
+    var str3 = 'She replied \'Calm down, please\'';
+
+
+    // JavaScript Escape Sequences
+    // \n is replaced by the newline character
+    // \t is replaced by the tab character
+    // \r is replaced by the carriage-return character
+    // \b is replaced by the backspace character
+    // \\ is replaced by a single backslash (\)
+
+
+    var str1 = "The quick brown fox \n jumps over the lazy dog.";
+    document.write("<pre>" + str1 + "</pre>"); // Create line break
+    
+    var str2 = "C:\Users\Downloads";
+    document.write(str2); // Prints C:UsersDownloads
+    
+    var str3 = "C:\\Users\\Downloads";
+    document.write(str3); // Prints C:\Users\Downloads
+
+
+    // Getting the Length of a String// 
+
+    var str1 = "This is a paragraph of text.";
+    document.write(str1.length); // Prints 28
+    
+    var str2 = "This is a \n paragraph of text.";
+    document.write(str2.length); // Prints 30, because \n is only one character
+
+
+
+
+    // Finding a String Inside Another String
+    var str = "If the facts don't fit the theory, change the facts.";
+    var pos = str.indexOf("facts");
+    alert(pos); // 0utputs: 7
+
+    var str = "If the facts don't fit the theory, change the facts.";
+    var pos = str.lastIndexOf("facts");
+    alert(pos); // 0utputs: 46
+
+    var str = "If the facts don't fit the theory, change the facts.";
+ 
+    // Searching forwards
+    var pos1 = str.indexOf("facts", 20);
+    alert(pos1); // 0utputs: 46
+    
+    // Searching backwards
+    var pos2 = str.lastIndexOf("facts", 20);
+    alert(pos2); // 0utputs: 7
+
+
+
+
+    // Searching for a Pattern Inside a String
+    var str = "Color red looks brighter than color blue.";
+ 
+    // Case sensitive search
+    var pos1 = str.search("color");
+    alert(pos1); // 0utputs: 30
+    
+    // Case insensitive search using regexp
+    var pos2 = str.search(/color/i);
+    alert(pos2); // 0utputs: 0
+
+    var str = "The quick brown fox jumps over the lazy dog.";
+    var subStr = str.slice(4, 15);
+    document.write(subStr); // Prints: quick brown
+
+    var str = "The quick brown fox jumps over the lazy dog.";
+    document.write(str.slice(-28, -19)); // Prints: fox jumps
+    document.write(str.slice(31)); // Prints: the lazy dog.
+// If either argument is less than 0 or is NaN, it is treated as 0.
+// If either argument is greater than str.length, it is treated as if it were str.length.
+// If startIndex is greater than endIndex, then substring() will swap those two arguments; for example, str.substring(5, 0) == str.substring(0, 5).
+
+
+
+
+    var str = "The quick brown fox jumps over the lazy dog.";
+    document.write(str.substring(4, 15)); // Prints: quick brown
+    document.write(str.substring(9, 0)); // Prints: The quick
+    document.write(str.substring(-28, -19)); // Prints nothing
+    document.write(str.substring(31)); // Prints: the lazy dog.
+
+
+    // Extracting a Fixed Number of Characters from a String
+    var str = "The quick brown fox jumps over the lazy dog.";
+    document.write(str.substr(4, 15)); // Prints: quick brown fox
+    document.write(str.substr(-28, -19)); // Prints nothing
+    document.write(str.substr(-28, 9)); // Prints: fox jumps
+    document.write(str.substr(31)); // Prints: the lazy dog.
+
+
+    // Replacing the Contents of a String
+    var str = "Color red looks brighter than color blue.";
+    var result = str.replace("color", "paint");
+    alert(result); // 0utputs: Color red looks brighter than paint blue.
+    
+    var str = "Color red looks brighter than color blue.";
+    var result = str.replace(/color/i, "paint");
+    alert(result); // 0utputs: paint red looks brighter than color blue.
+
+    var str = "Color red looks brighter than color blue.";
+    var result = str.replace(/color/ig, "paint");
+    alert(result); // 0utputs: paint red looks brighter than paint blue.
+
+
+    // Converting a String to Uppercase or Lowercase
+
+    var str = "Hello World!";
+    var result = str.toUpperCase();
+    document.write(result); // Prints: HELLO WORLD!
+
+    var str = "Hello World!";
+    var result = str.toLowerCase();
+    document.write(result); // Prints: hello world!
+
+
+    // Concatenating Two or More Strings
+    var hello = "Hello";
+    var world = "World";
+    var greet = hello + " " + world;
+    document.write(greet); // Prints: Hello World
+    
+    var wish  = "Happy";
+        wish += " New Year";
+    document.write(wish); // Prints: Happy New Year
+
+
+    // Accessing Individual Characters from a String
+    var str = "Hello World!";
+    document.write(str.charAt());  // Prints: H
+    document.write(str.charAt(6)); // Prints: W
+    document.write(str.charAt(30)); // Prints nothing
+    document.write(str.charAt(str.length - 1)); // Prints: !
+
+    var str = "Hello World!";
+    document.write(str[0]); // Prints: H
+    document.write(str[6]); // Prints: W
+    document.write(str[str.length - 1]); // Prints: !
+    document.write(str[30]); // Prints: undefined
+
+
+
+    // Splitting a String into an Array
+    var fruitsStr = "Apple, Banana, Mango, Orange, Papaya";
+    var fruitsArr = fruitsStr.split(", ");
+    document.write(fruitsArr[0]); // Prints: Apple
+    document.write(fruitsArr[2]); // Prints: Mango
+    document.write(fruitsArr[fruitsArr.length - 1]); // Prints: Papaya
+    
+    // Loop through all the elements of the fruits array 
+    for(var i in fruitsArr) {  
+        document.write("<p>" + fruitsArr[i] + "</p>");
+    }
+
+
+    var str = "INTERSTELLAR";
+    var strArr = str.split("");
+    document.write(strArr[0]); // Prints: I
+    document.write(strArr[1]); // Prints: N
+    document.write(strArr[strArr.length - 1]); // Prints: R
+    
+    // Loop through all the elements of the characters array and print them
+    for(var i in strArr) {  
+        document.write("<br>" + strArr[i]);
+    }
+
+</script>
+</html>

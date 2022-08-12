@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function altbox(){
+            alert("Hello Devansh");
+        }
+
+        function confirmbox(){
+            if(confirm("Are You Sure!!")){
+                alert("You have submitted the form");
+                document.getElementById('bg').style.backgroundColor = "green";
+            }
+            else{
+                alert("You have not submitted Your Form");
+                document.getElementById('bg').style.backgroundColor = "red";
+            }
+        }
+
+        function promptbox(){
+            var username = document.getElementById('uname');
+            var usernameinput = prompt("Enter You name");
+            username.innerHTML = "Hello " + usernameinput;
+        }
+    </script>
+</head>
+<body id="bg">
+    <button onclick="altbox()">Alert</button>
+    <button onclick="confirmbox()">Confirm</button>
+    <button onclick="promptbox()">Prompt</button>
+    <h1 id="uname"></h1>
+</body>
+</html>

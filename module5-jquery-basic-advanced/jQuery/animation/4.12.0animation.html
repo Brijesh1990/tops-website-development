@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Animation Effects</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    img{
+        position: relative; /* Required to move element */
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("img").animate({
+            left: 300,
+            width: 'toggle'
+        },1000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <p>
+    	<img src="mushroom.jpg" alt="Mushroom">
+    </p>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var person = {
+        name: "Jay",
+        age: 28,
+        gender: "Male",
+        displayName: function() {
+            alert(this.name);
+        }
+    };
+    var person = {
+        "first name": "Amin",
+        "current age": 28,
+        gender: "Male"
+    };
+
+
+    var book = {
+        "name": "Harry Potter and the Goblet of Fire",
+        "author": "J. K. Rowling",
+        "year": 2000
+    };
+
+    // Dot notation
+    document.write(book.author);  // Prints: J. K. Rowling
+
+    // Bracket notation
+    document.write(book["year"]); // Prints: 2000
+
+    var book = {
+        name: "Harry Potter and the Goblet of Fire",
+        author: "J. K. Rowling",
+        "publication date": "8 July 2000"
+    };
+
+    // Bracket notation
+    document.write(book["publication date"]); // Prints: 8 July 2000
+
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male"
+    };
+
+    // Iterating over object properties
+    for(var i in person) {  
+        document.write(person[i] + "<br>"); // Prints: name, age and gender
+    }
+
+    // Setting Object's Properties
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male"
+    };
+
+    // Setting a new property
+    person.country = "United States";
+    document.write(person.country); // Prints: United States
+
+    person["email"] = "peterparker@mail.com";
+    document.write(person.email); // Prints: peterparker@mail.com
+
+    // Updating existing property
+    person.age = 30;
+    document.write(person.age); // Prints: 30
+
+    person["name"] = "Peter Parker";
+    document.write(person.name); // Prints: Peter Parker 
+
+    // Deleting Object's Properties
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male",
+        displayName: function() {
+            alert(this.name);
+        }
+    };
+
+    // Deleting property
+    delete person.age;
+    alert(person.age); // Outputs: undefined
+
+    // Calling Object's Methods
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male",
+        displayName: function() {
+            alert(this.name);
+        }
+    };
+
+    person.displayName(); // Outputs: Peter
+    person["displayName"](); // Outputs: Peter
+
+
+    // Manipulating by Value vs. Reference
+    var message = "Hello World!";
+
+    var greet = message; // Assign message variable to a new variable
+    greet = "Hi, there!";
+
+    document.write(message);  // Prints: Hello World!
+    document.write(greet);  // Prints: Hi, there!
+
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male"
+    };
+
+    var user = person; // Assign person variable to a new variable
+    user.name = "Harry";
+
+    document.write(person.name);  // Prints: Harry
+    document.write(user.name);  // Prints: Harry
+</script>
+</html>

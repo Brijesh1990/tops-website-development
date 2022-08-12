@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Understanding the Variable Scope
+// Defining function
+function greetWorld() {
+    var greet = "Hello World!";
+    alert(greet);
+}
+ 
+greetWorld(); // Outputs: Hello World!
+ 
+alert(greet); // Uncaught ReferenceError: greet is not defined
+
+
+var greet = "Hello World!";
+ 
+// Defining function
+function greetWorld() {
+    alert(greet);
+}
+ 
+greetWorld();  // Outputs: Hello World!
+ 
+alert(greet); // Outputs: Hello World!
+</script>
+</html>

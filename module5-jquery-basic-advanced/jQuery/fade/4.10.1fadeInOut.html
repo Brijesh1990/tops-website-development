@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-In and Fade-Out Effects with Different Speeds</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #DDA0DD;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Fading out displayed paragraphs with different speeds
+    $(".out-btn").click(function(){
+        $("p.normal").fadeOut();
+        $("p.fast").fadeOut("fast");
+        $("p.slow").fadeOut("slow");
+        $("p.very-fast").fadeOut(50);
+        $("p.very-slow").fadeOut(2000);
+    });
+    
+    // Fading in hidden paragraphs with different speeds
+    $(".in-btn").click(function(){
+        $("p.normal").fadeIn();
+        $("p.fast").fadeIn("fast");
+        $("p.slow").fadeIn("slow");
+        $("p.very-fast").fadeIn(50);
+        $("p.very-slow").fadeIn(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="out-btn">Fade Out Paragraphs</button>
+    <button type="button" class="in-btn">Fade In Paragraphs</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+</body>
+</html>                                		

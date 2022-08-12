@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+        /* animation-duration: 3s; */
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-duration: 5s, 7s, 1s;
+        animation-direction: alternate;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%; 
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+      @keyframes imgSize {
+        /* from {
+          transform: scale(2);
+        }
+        to {
+            transform: scale(4);
+        } */
+        0%{
+            transform: scale(1);
+        }
+        10%{
+            transform: scale(1.5);
+        }
+        20%{
+            transform: scale(1.8);
+        }
+        50%{
+            transform: scale(2);
+        }
+        100%{
+            transform: scale(4);
+        }
+        
+      }
+      img{
+        animation-name: imgSize;
+        animation-iteration-count: infinite;
+        animation-duration: 5s, 7s, 1s;
+        animation-direction: alternate;
+      }
+    </style>
+</head>
+<body>
+        <img src="../yClqv.png" alt="">
+      <p>The Caterpillar and Alice looked at each other for some time in silence:
+      at last the Caterpillar took the hookah out of its mouth, and addressed
+      her in a languid, sleepy voice.</p>
+</body>
+</html>

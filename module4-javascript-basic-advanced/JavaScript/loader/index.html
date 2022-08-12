@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Online sample webpage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/jquery.js'></script>
+    <script src='js/cycle.min.js'></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+
+        $(".fitness-slider").cycle("fade");
+
+     })
+
+    </script>
+</head>
+<body bgcolor="white" onload="display()">
+    <div id="loader"></div>
+
+    <div id="Main">
+    <!-- fitness header -->
+     <div class="fitness-header">
+
+        <div class="fitness-logo">
+            <h1>Finesse Fitness</h1>
+            <p>Will provides fitness mantra and provides a tips for body building</p>
+        </div>
+
+        <div class="fitness-toll-free">
+            <h5>call on (+91)9998003879</h5>
+        </div>
+     </div>
+
+     <div class="clearfix"></div>
+    <!-- fitness navbar -->
+    <div class="fitness-navbar">
+        <ul class="navbar-link">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="gallery.html">Gym Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>    
+    <!-- fitness slider -->
+    <div class="fitness-slider">
+        <img src="images/slider.jpg">
+        <img src="images/slider1.jpg">
+        <img src="images/slider3.webp">
+    </div>
+    <!-- fitness content -->
+    <div class="fitness-content">
+        <h1>Get Your vip 7 days free membership</h1>
+        <hr>
+        <img src="images/slider1.jpg">
+
+        <div class="fitness-signup">
+            <h3>Contact with Us  for free 7 days membership</h3>
+            <form method="post" action="welcome.html">
+                <table align="left">
+                <tr>
+                    <td>FirstName :<input type="text" name="fname" placeholder="FirstName *" required></td>
+                </tr>
+
+                <tr>
+                    <td>LastName :<input type="text" name="lname" placeholder="LastName *" required></td>
+                </tr>
+
+                <tr>
+                    <td>Location :&nbsp;&nbsp;<select name="location" placeholder="Location *" required>
+                      <option value="loca">Location</option>
+                      <option value="">Raiya Road</option>
+                      <option value="">Kalawad Road</option>
+                      <option value="">Gondal Road</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Phone :&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="phone" placeholder="Phone *" required></td>
+                </tr>
+
+
+                <tr>
+                    <td align="center" colspan="2"><input type="submit" name="submit" value="Get in Touch" required id="btn"></td>
+                </tr>
+                </table>
+            </form>  
+        </div>
+        
+        <div class="fitness-map">
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.460352883667!2d70.74791556977542!3d22.2830998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cbcef4e52b43%3A0x7d3694e2e52d794b!2sOxygen%20Fitness!5e0!3m2!1sen!2sin!4v1645846646395!5m2!1sen!2sin" width="52%" height="280" style="border:0; float: left; padding: 10px;" allowfullscreen="" loading="lazy"></iframe>
+            <br>
+            <b> Oxygen Fitness</b>
+            <br><br>
+            <b style="font-weight: 100; margin: 4px;"> 201, Shivalik 2,, Above SBI Bank,<br>Puskar Dham Main Road, University road, Rajkot, 360005
+            </b><br><br><br>
+            <b> Working hours</b>
+            <br>
+            <b style="font-weight: 100; margin: 4px;"> 
+                <br>
+                Monday 10:00am to 7:00pm<br>
+                Tuesday 10:00am to 7:00pm<br>
+                Wednesday 10:00am to 7:00pm<br>
+                Thursday 10:00am to 7:00pm<br>
+                Friday 10:00am to 7:00pm<br>
+                Saturday 10:00am to 7:00pm<br>
+                Sunday <span style="color: green;">Open</span>10:00am to 1:00pm<br>
+            </b>
+
+        </div>
+    </div>
+    <!-- fitness footer -->
+    <div class="fitness-footer">
+        <div class="fitness-logo">
+            <h1>Finesse Fitness</h1>
+            <p>Will provides fitness mantra and provides a tips for body building</p>
+        </div>
+
+        <div class="fitness-toll-free">
+            <h5>call on (+91)9998003879</h5>
+        </div>
+
+        <div class="clearfix"></div>
+        <p>Copyright@2015-2022 All right reserved company</p>
+
+    </div>
+    </div>
+
+
+    <script>
+        var myvar;
+        function display()
+        {
+            myvar=setTimeout("shw()",2000);
+        }
+        function shw()
+        {
+            document.getElementById("loader").style="display:none";
+            document.getElementById("Main").style="display:block";
+        }
+    </script>
+</body>
+</html>

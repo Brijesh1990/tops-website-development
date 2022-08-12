@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    width: 125px;
+    height: 125px;
+    perspective: 500px;
+    border: 4px solid #e5a043;
+    background: #fff2dd;
+}
+.transformed {
+    /* -webkit-transform: translate3d(25px, 25px, 50px); Chrome, Safari, Opera */
+    /* transform: translate3d(25px, 25px, 150px);  */
+    /* transform: translate(25px, 25px); */
+    position: absolute;
+}
+    </style>
+</head>
+<body>
+    <h2>Before Translation:</h2>
+    <div class="container">
+      	<img src="../yClqv.png" width="100%" alt="Diamond Card">
+    </div>
+    <h2>After Translation:</h2>
+  	<div class="container">
+        <img src="../yClqv.png" width="100%" class="transformed" alt="Diamond Card">
+    </div>
+</body>
+</html>

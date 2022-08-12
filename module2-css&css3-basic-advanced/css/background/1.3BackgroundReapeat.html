@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          /* background:grey; */
+        }
+        .BgImage{
+            /* background:url('../images/pexels-photo-1591447.jpeg');
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            height: 1500px;
+            background-position: right top;
+            background-attachment: fixed; */
+            background: #f0e68c url("../images/pexels-photo-1591447.jpeg") no-repeat fixed 250px 25px;
+            height: 1500px;
+        }
+        .fontsizelarger{
+            font-size: larger;
+        }
+        .fontsizelarge{
+            font-size: large;
+        }
+        .fontsizevw{
+            font-size: 5vw;
+        }
+        .fontsizecal{
+            font-size: calc(1em + 1vw); 
+            /* font-size: calc(16px + 16px); //desktop  */
+            /* font-size: calc(16px + 12/14px); //desktop  */
+            /* at least */
+        }
+        .fontsizeper{
+            /* font-size: 100%;  */
+            font-weight: 100; 
+            font-variant: small-caps;
+            /* font-variant: caps; */
+        }
+    </style>
+</head>
+<body>
+    <!-- url('../images/img1.jpg') -->
+    <!-- <img src="../images/img1.jpg" alt=""> -->
+    test
+    <!-- for the em font size base is fixed as 16px -->
+    <!-- for the vw font size base is on screen resolution like example if we open our page in dekstop it will take base as 16px (2vw for desktop is 32px and for the mobile base whould be 14/12px 2vw means 24px)
+    
+        2em = 32px in both mobile and desktop
+    -->
+    <p class="fontsizeper">viewport</p>
+    <p class="fontsizevw">viewport</p>
+    <p class="fontsizecal">viewport</p>
+    <div class="BgImage">
+        <table>
+            <tr>
+                <td style="font-size: 5vw;">Something</td>
+            </tr>
+            <!-- <tr>
+                <td class="">Something Large</td>
+            </tr> -->
+            <tr>
+                <td class="fontsizelarger">Something Larger</td>
+            </tr>
+        </table>
+    </div>
+   
+    <h1>Testing</h1>
+</body>
+</html>

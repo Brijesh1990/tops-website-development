@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function chng()
+        {
+            document.getElementById("imgg").src="images/on.jpg";
+        }
+        
+        function chng1()
+        {
+            document.getElementById("imgg").src="images/onn.jpg";
+        }
+
+        function sty()
+        {
+            document.getElementById("btn").style="background-color:red; color:white; border:none; font-size:20px";
+        }
+    </script>
+</head>
+<body onload="sty()">
+
+    <center>
+     
+     <img src="images/on.jpg" id="imgg" style="width: 200px; height: 300px;">
+     <br>
+
+    <button id="btn" onclick="chng1()">Change Here</button>
+    
+    </center>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background: #333;}
+.container div{margin: 80px auto;}
+
+#meditation{
+	width: 140px;
+	height: 140px;
+	background:url(http://xy.mouthoftiger.com/img/sport3-1.png) center center no-repeat;
+}
+
+#meditation img{
+	position: relative;
+	left: 0;
+	bottom: 1px;
+	transition: all ease-in-out 1s;
+	-moz-transition: all ease-in-out 1s;
+	-webkit-transition: all ease-in-out 1s;
+	-ms-transition: all ease-in-out 1s;
+	-o-transition: all ease-in-out 1s;
+	
+	animation: float 1s linear infinite alternate;
+	-moz-animation: float 1s linear infinite alternate;
+	-webkit-animation: float 1s linear infinite alternate;
+	-ms-animation: float 1s linear infinite alternate;
+	-o-animation: float 1s linear infinite alternate;
+}
+
+
+@-webkit-keyframes float{
+	0% {bottom: 1px;}
+	100% {bottom: 6px;}	
+}
+
+@-moz-keyframes float{
+	0% {bottom: 1px;}
+	100% {bottom: 6px;}	
+}
+
+@-ms-keyframes float{
+	0% {bottom: 1px;}
+	100% {bottom: 6px;}	
+}
+
+@-o-keyframes float{
+	0% {bottom: 1px;}
+	100% {bottom: 6px;}	
+}
+
+@keyframes float{
+	0% {bottom: 1px;}
+	100% {bottom: 6px;}	
+}
+ 
+ 
+ 
+ #pingpong{
+	width: 140px;
+	height: 140px;
+	background:url(http://xy.mouthoftiger.com/img/sport1-1.png) center center no-repeat;
+}
+
+#pingpong img{
+	position: relative;
+	left: 0;
+	bottom: 10px;
+	transition: all linear 1s;
+	-moz-transition: all linear 1s;
+	-webkit-transition: all linear 1s;
+	-o-transition: all linear 1s;
+	-ms-transition: all linear 1s;
+	
+	animation: ball .8s linear infinite alternate;
+	/* -moz-animation: ball .8s linear infinite alternate;
+	-webkit-animation: ball .8s linear infinite alternate;
+	-o-animation: ball .8s linear infinite alternate;
+	-ms-animation: ball .8s linear infinite alternate; */
+}
+
+
+@-webkit-keyframes ball{
+	0% {bottom: 4px;}
+	100% {bottom: -90px;}	
+}
+
+@keyframes ball{
+	0% {bottom: 4px;}
+	100% {bottom: -90px;}	
+}
+ 
+ 
+ #swimming{
+	width: 140px;
+	height: 140px;
+	background:url(http://xy.mouthoftiger.com/img/sport2-1.png) center center no-repeat;
+}
+ 
+bubble_wrap{
+	width: 140px;
+	height: 140px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.bubbles{
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 100px 100px 100px 100px;
+	-moz-border-radius: 100px 100px 100px 100px;
+	-webkit-border-radius: 100px 100px 100px 100px;
+	-o-border-radius: 100px 100px 100px 100px;
+	-ms-border-radius: 100px 100px 100px 100px;
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	position: relative;	
+	opacity: 0;
+}
+
+.b1{
+	animation: bubbles1 3s linear infinite;
+	-moz-animation: bubbles1 3s linear infinite;
+	-webkit-animation: bubbles1 3s linear infinite;
+	-ms-animation: bubbles1 3s linear infinite;
+	-o-animation: bubbles1 3s linear infinite;
+}
+
+@-webkit-keyframes bubbles1{
+	0%{top: 80px;opacity: 0;}
+	50%{top: 20px;opacity: 1;}
+	100%{top: -50px; opacity: 0; height: 30px; width: 30px;}
+}
+
+@keyframes bubbles1{
+		0%{top: 80px;opacity: 0;}
+	50%{top: 20px;opacity: 1;}
+	100%{top: -50px; opacity: 0; height: 30px; width: 30px;}
+}
+
+.b2{
+	animation: bubbles2 4s linear 2s infinite;
+	-webkit-animation: bubbles2 4s linear 2s infinite;
+	-moz-animation: bubbles2 4s linear 2s infinite;
+	-ms-animation: bubbles2 4s linear 2s infinite;
+	-o-animation: bubbles2 4s linear 2s infinite;
+}
+
+@keyframes bubbles2{
+	0%{top: 20px; left: -10px; opacity: 0;}
+	50%{top: -10px;opacity: 1;}
+	100%{top: -60px; left: -30px; opacity: 0;}
+}
+
+@-webkit-keyframes bubbles2{
+	0%{top: 20px; left: -10px; opacity: 0;}
+	50%{top: -10px;opacity: 1;}
+	100%{top: -60px; left: -30px; opacity: 0;}
+}
+
+
+.b3{
+	animation: bubbles3 4s linear 1s infinite;
+	-webkit-animation: bubbles3 4s linear 1s infinite;
+	-moz-animation: bubbles3 4s linear 1s infinite;
+	-ms-animation: bubbles3 4s linear 1s infinite;
+	-o-animation: bubbles3 4s linear 1s infinite;
+}
+
+@keyframes bubbles3{
+	0%{top: -80px; left: -10px; opacity: 0;}
+	50%{top: -120px; opacity: 1;}
+	100%{top: -180px; left: 10px; opacity: 0;}
+}
+
+@-webkit-keyframes bubbles3{
+			0%{top: -80px; left: -10px; opacity: 0;}
+	50%{top: -120px; opacity: 1;}
+	100%{top: -180px; left: 10px; opacity: 0;}
+}
+
+.b4{
+	animation: bubbles4 2s linear 3s infinite;
+	-webkit-animation: bubbles4 2s linear 3s infinite;
+	-moz-animation: bubbles4 2s linear 3s infinite;
+	-o-animation: bubbles4 2s linear 3s infinite;
+	-ms-animation: bubbles4 2s linear 3s infinite;
+}
+
+@keyframes bubbles4{
+	0%{top: -200px; left: 10px; opacity: 0;}
+	50%{top: -250px; left: 5px; opacity: 1;}
+	100%{top: -300px; left: 0px; opacity: 0; width: 40px; height: 40px;}
+}
+
+@-webkit-keyframes bubbles4{
+		0%{top: -200px; left: 10px; opacity: 0;}
+	50%{top: -250px; left: 5px; opacity: 1;}
+	100%{top: -300px; left: 0px; opacity: 0; width: 40px; height: 40px;}
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="pingpong">
+        <img src="http://xy.mouthoftiger.com/img/sport1-2.png">
+        </div>  
+          
+        <div id="swimming">		
+                        <div class="bubble_wrap">
+                            <div class="bubbles b1"></div>
+                            <div class="bubbles b2"></div>
+                            <div class="bubbles b3"></div>
+                            <div class="bubbles b4"></div>
+                        </div>
+        </div>
+          
+        <div id="meditation">
+        <img src="http://xy.mouthoftiger.com/img/sport3-2.png">
+        </div>
+        </div>
+        </div>
+</body>
+</html>

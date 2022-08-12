@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example of CSS display</title>
+  <style>
+    .divinline-block {
+        display: inline-block;
+        background: #90EE90;
+        padding: 10px;
+    }
+    span {
+        display: inline-block;        
+        background: #F08080;
+        padding: 10px;
+    }
+    .spaninline {
+        display: inline;        
+        background-color: rgb(147, 80, 255);
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="divinline-block">
+    <span>This span element and its parent div element generate an inline-block box.</span>
+  </div>
+  <div>
+    <span class="spaninline">This span element and its parent div element generate an inline-block box.</span>
+  </div>
+</body>
+</html> 

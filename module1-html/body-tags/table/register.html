@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body bgcolor="lightblue">
+
+    <h1 align="center">Register Form </h1>
+    <hr style="border:2px solid black; width:30%">
+
+    <form method="post">
+    <table align="center" border="0" style="width:40%" cellpadding="5" cellspacing="5">
+        <tr>
+        <th>Email * </th>
+        <td><input type="text" name="email" placeholder="Email *"></td>
+        </tr>
+
+        <tr>
+            <th>Password *</th>
+            <td><input type="password" name="password" placeholder="Password *"></td>
+        </tr>
+
+        <tr>
+            <th>Re-Password *</th>
+            <td><input type="password" name="repassword" placeholder="Re-Password *"></td>
+        </tr>
+
+        <tr>
+            <th>Phone *</th>
+            <td><input type="text" name="phone" placeholder="Phone *"></td>
+        </tr>
+
+        <tr>
+            <th>Uplaod photo *</th>
+            <td><input type="file" name="photo" placeholder="Photo *"></td>
+        </tr>
+
+
+        <tr>
+            <th>Date of Birth *</th>
+            <td><input type="date" name="dob" placeholder="DOB *"></td>
+        </tr>
+
+        <tr>
+            <th>Gender *</th>
+            <td>Male<input type="radio" name="gender" value="male">
+                Female<input type="radio" name="gender" value="female">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Hobby *</th>
+            <td>Play<input type="checkbox" name="hobby" value="play">
+                Reading<input type="checkbox" name="hobby" value="reading">
+                Cooking<input type="checkbox" name="hobby" value="cooking">
+                Surfing<input type="checkbox" name="hobby" value="surfing">
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>Select State</th>
+            <td><select name="state">
+                <option value="">State</option>
+                <option value="">Gujrat</option>
+                <option value="">Rajsthan</option>
+                <option value="">Mahrastra</option>
+            </select></td>
+        </tr>
+
+        
+        <tr>
+            <th>Select City</th>
+            <td><select name="city">
+                <option value="">City</option>
+                <option value="">Rajkot</option>
+                <option value="">Ahemdabad</option>
+                <option value="">Surat</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" name="register" value="Register">
+            
+                <input type="reset" name="reset" value="Reset">
+            
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                
+                <b>Already have an Account ?<a href="table_colspan.html">Login Here</a></b>
+            </td>
+        </tr>
+    </table>
+
+    </form>
+    
+</body>
+</html>

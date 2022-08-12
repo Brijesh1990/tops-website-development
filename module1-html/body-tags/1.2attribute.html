@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form tag is use for the posting data to the server -->
+    <!-- default method is get -->
+    <!-- throgh the get method we can send data to the server via URL mease it will append data to the url -->
+    <!-- append data using ? as querystring -->
+    <!-- get method has a limitation of 2048 chars only -->
+    <!-- file:///C:/xampp/htdocs/JayWD/yejee/attribute.html?readonlytxt=This+is+the+Read+only&requiretxt=asdfasdf&Check=Save -->
+
+
+
+
+    <!-- another method is post -->
+    <!-- it will not shown data in URL means it is a secure method for passing data to the server  -->
+    <!-- there are no limitation for sending data to the server -->
+
+
+
+    <!-- if we want to send data to the server we must have to give name to particular tags -->
+
+
+
+    <!-- default method is get -->
+    <!-- <form> -->
+    <!-- <form method="get">  -->
+    <form method="post">
+        <input type="text" name="readonlytxt" value="This is the Read only" readonly>
+        <input type="text" name="requiretxt" required><br>
+        <input type="password" name="password" required><br>
+        <!-- when we want to send data to the server, server only recive values through tag atrribute name and if we want to send multiple data in single name it will consider as array and we have to use [] sign for define that name as array -->
+        <input type="checkbox" name="chk" value="Cricket">Cricket
+        <input type="checkbox" name="chk1" value="Music">Music
+        <input type="checkbox" name="chk2" value="Reading">Reading<br>
+        <input type="text" name="disabledtxt" disabled value="user@mail.com">
+        <input type="button" name="disabledbtn" disabled value="submit">
+        <input type="submit" name="Check" value="Save">
+    </form>    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		label {
+			display: inline-block;
+			width: 120px;
+		}
+
+		div {
+			margin-bottom: 15px;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function formvalidation(){
+			var username = document.getElementById('fname').value;
+			var mo_number = document.getElementById('m_no').value;
+			var email = document.getElementById('e_id').value;
+			var password = document.getElementById('pass').value;
+
+			if(username == "")
+			{
+				alert("Enter Your Name");
+				document.getElementById('fname').focus();
+				return false;
+			}
+
+			var userpatt = /^[a-zA-Z]{3,20}$/;
+
+			if(!userpatt.test(username))
+			{
+				alert("Enter alphabet only Number not allow in name");
+				document.getElementById('fname').focus();
+				return false;
+			}
+
+			if(mo_number == "")
+			{
+				alert("Enter Your Mobile Number");
+				document.getElementById('m_no').focus();
+				return false;
+			}
+
+			var mobpatt = /^[0-9]{10}$/;
+
+			if(!mobpatt.test(mo_number))
+			{
+				alert("Enter number only Alphabet not allow in Number");
+				document.getElementById('m_no').focus();
+				return false;
+			}
+
+			if(email == "")
+			{
+				alert("Enter Your E-mail ID");
+				document.getElementById('e_id').focus();
+				return false;
+			}
+
+			var emailpatt1 = /^[a-z0-9_.-]+@+[a-z]{3,6}\.[a-z]{2,3}$/;
+			var emailpatt2 = /^[A-Z0-9_.-]+@+[A-Z]{3,6}\.[A-Z]{2,3}$/;
+
+			if(emailpatt1.test(email) || emailpatt2.test(email) )
+			{
+				// alert("email done");
+			}
+			else
+			{
+				alert("Enter proper email id");
+				document.getElementById('e_id').focus();
+				return false;
+			}
+
+
+
+			if(password == "")
+			{
+				alert("Enter password");
+				document.getElementById('pass').focus();
+				return false;
+			}
+
+			var passpatt = /(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[~!@#$%^&*_])[a-zA-Z0-9~!@#$%^&*_]{6,12}$/;
+
+
+			if(!passpatt.test(password))
+			{
+				alert("Enter at leat one number , uppercase ,  lower case and spcial character");
+				document.getElementById('pass').focus();
+				return false;
+			}
+
+			var debitcard = document.getElementById('debit').value;
+
+			if(debitcard == "")
+			{
+				alert("Enter card Details");
+				document.getElementById('debit').focus();
+				return false;
+			}
+
+			var debitpatt = /^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/;
+
+			if(!debitpatt.test(debitcard))
+			{
+				alert("enter proper card Details");
+				document.getElementById('debit').focus();
+				return false;
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+
+	<form onsubmit="return formvalidation()">
+		<div>
+			<label>First name:</label>
+			<input type="text" id="fname" name="fname">
+		</div>
+
+		<div>
+			<label>Mobile No:</label>
+			<input type="tel"  id="m_no" name="mno">
+		</div>
+
+		<div>
+			<label>Email. Id:</label>
+			<input type="text" name="email" id="e_id">
+		</div>
+
+		<div>
+			<label>Password:</label>
+			<input type="text" id="pass" name="pass">
+		</div>
+
+		<div>
+			<label>Enter Debit card No</label>
+			<input type="text" id="debit" name="debit">
+		</div>
+		<div>
+			<button type="submit">Send Data</button>
+			<button type="reset">Clear Form</button>
+		</div>
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: aliceblue;
+}
+
+.top-header 
+{
+    width: 100%;
+    height: 45px;
+    padding: 2px;
+    background-color: white;
+}
+.header-link
+{
+    float: right;
+}
+.header-link li 
+{
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 0 10px;
+  
+}
+.header-link a 
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: #3b3a3a;
+}

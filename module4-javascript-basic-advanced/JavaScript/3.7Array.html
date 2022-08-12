@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var colors = ["Red", "Green", "Blue"]; 
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    var cities = ["Ahmedabad", "Anand", "Baroda"];
+    var person = ["Jay", "Amin", 30];
+
+
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+ 
+    document.write(fruits[0]); // Prints: Apple
+    document.write(fruits[1]); // Prints: Banana
+    document.write(fruits[2]); // Prints: Mango
+    document.write(fruits[fruits.length - 1]); // Prints: Papaya
+
+    // Getting the Length of an Array START
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    document.write(fruits.length); // Prints: 5
+    // Getting the Length of an Array END
+
+    // Looping Through Array Elements START
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+ 
+    // Iterates over array elements
+    for(var i = 0; i < fruits.length; i++) {    
+        document.write(fruits[i] + "<br>"); // Print array element
+    }
+
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+ 
+    // Iterates over array elements
+    for(var fruit of fruits) {    
+        document.write(fruit + "<br>"); // Print array element
+    }
+
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+ 
+    // Loop through all the elements in the array 
+    for(var i in fruits) {  
+        document.write(fruits[i] + "<br>");
+    }
+    // Looping Through Array Elements END
+
+
+    // Adding New Elements to an Array START
+    var colors = ["Red", "Green", "Blue"]; 
+    colors.push("Yellow");
+    
+    document.write(colors); // Prints: Red,Green,Blue,Yellow
+    document.write(colors.length); // Prints: 4
+
+    var colors = ["Red", "Green", "Blue"]; 
+    colors.unshift("Yellow");
+    
+    document.write(colors); // Prints: Yellow,Red,Green,Blue
+    document.write(colors.length); // Prints: 4
+
+    var colors = ["Red", "Green", "Blue"];
+    colors.push("Pink", "Voilet");
+    colors.unshift("Yellow", "Grey");
+    
+    document.write(colors); // Prints: Yellow,Grey,Red,Green,Blue,Pink,Voilet
+    document.write(colors.length); // Prints: 7
+    // Adding New Elements to an Array END
+
+    // Removing Elements from an Array START
+    var colors = ["Red", "Green", "Blue"];
+    var last = colors.pop();
+    
+    document.write(last); // Prints: Blue
+    document.write(colors.length); // Prints: 2
+
+    var colors = ["Red", "Green", "Blue"];
+    var first = colors.shift();
+    
+    document.write(first); // Prints: Red
+    document.write(colors.length); // Prints: 2
+
+    //Note : The push() and pop() methods runs faster than unshift() and shift(). Because push() and pop() methods simply add and remove elements at the end of an array therefore the elements do not move, whereas unshift() and shift() add and remove elements at the beginning of the array that require re-indexing of whole array.
+    // Removing Elements from an Array END
+
+    // Adding or Removing Elements at Any Position START
+    var colors = ["Red", "Green", "Blue"];
+    var removed = colors.splice(0,1); // Remove the first element
+    
+    document.write(colors); // Prints: Green,Blue
+    document.write(removed); // Prints: Red (one item array)
+    document.write(removed.length); // Prints: 1
+    
+    removed = colors.splice(1, 0, "Pink", "Yellow"); // Insert two items at position one
+    document.write(colors); // Prints: Green,Pink,Yellow,Blue
+    document.write(removed); // Empty array
+    document.write(removed.length); // Prints: 0
+    
+    removed = colors.splice(1, 1, "Purple", "Voilet"); // Insert two values, remove one
+    document.write(colors); //Prints: Green,Purple,Voilet,Yellow,Blue
+    document.write(removed); // Prints: Pink (one item array)
+    document.write(removed.length); // Prints: 1
+    // Adding or Removing Elements at Any Position END
+
+
+    // Creating a String from an Array START
+    var colors = ["Red", "Green", "Blue"];
+ 
+    document.write(colors.join()); // Prints: Red,Green,Blue
+    document.write(colors.join("")); // Prints: RedGreenBlue
+    document.write(colors.join("-")); // Prints: Red-Green-Blue
+    document.write(colors.join(", ")); // Prints: Red, Green, Blue
+
+    var colors = ["Red", "Green", "Blue"];
+    document.write(colors.toString()); // Prints: Red,Green,Blue
+    // Creating a String from an Array END
+
+
+    // Extracting a Portion of an Array START
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    var subarr = fruits.slice(1, 3);
+    document.write(subarr); // Prints: Banana,Mango
+
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+ 
+    document.write(fruits.slice(2)); // Prints: Mango,Orange,Papaya
+    document.write(fruits.slice(-2)); // Prints: Orange,Papaya
+    document.write(fruits.slice(2, -1)); // Prints: Mango,Orange
+    // Extracting a Portion of an Array END
+
+
+    // Merging Two or More Arrays START
+    var pets = ["Cat", "Dog", "Parrot"];
+    var wilds = ["Tiger", "Wolf", "Zebra"];
+    
+    // Creating new array by combining pets and wilds arrays
+    var animals = pets.concat(wilds); 
+    document.write(animals); // Prints: Cat,Dog,Parrot,Tiger,Wolf,Zebra
+
+    var pets = ["Cat", "Dog", "Parrot"];
+    var wilds = ["Tiger", "Wolf", "Zebra"];
+    var bugs = ["Ant", "Bee"];
+    
+    // Creating new array by combining pets, wilds and bugs arrays
+    var animals = pets.concat(wilds, bugs); 
+    document.write(animals); // Prints: Cat,Dog,Parrot,Tiger,Wolf,Zebra,Ant,Bee
+    // Merging Two or More Arrays END
+
+
+    // Searching Through an Array START
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    
+    document.write(fruits.indexOf("Apple")); // Prints: 0
+    document.write(fruits.indexOf("Banana")); // Prints: 1
+    document.write(fruits.indexOf("Pineapple")); // Prints: -1
+    
+    var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+ 
+    // Searching forwards, starting at from- index
+    document.write(arr.indexOf(1, 2)); // Prints: 3
+    
+    // Searching backwards, starting at from index
+    document.write(arr.lastIndexOf(1, 2)); // Prints: 0
+
+    var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+ 
+    document.write(arr.includes(1)); // Prints: true
+    document.write(arr.includes(6)); // Prints: false
+    document.write(arr.includes(1, 2)); // Prints: true
+    document.write(arr.includes(3, 4)); // Prints: false
+
+    var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+ 
+    var result = arr.find(function(element) {
+    return element > 4;
+    });
+    document.write(result); // Prints: 5
+
+    var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+ 
+    var result = arr.findIndex(function(element) {
+    return element > 6;
+    });
+    document.write(result); // Prints: 8
+
+    var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+ 
+    var result = arr.filter(function(element) {
+    return element > 4;
+    });
+    document.write(result); // Prints: 5,7
+    document.write(result.length); // Prints: 2
+    // Searching Through an Array END
+
+
+
+</script>
+</html>

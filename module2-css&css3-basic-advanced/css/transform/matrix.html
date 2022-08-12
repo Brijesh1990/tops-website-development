@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 matrix() Method</title>
+<style>
+    img {
+		-webkit-transform: matrix(0, -1, 5, 0, 200px, 50px);  /* Chrome, Safari, Opera */
+		   -moz-transform: matrix(0, -1, 5, 0, 200px, 50px);  /* Firefox */
+			-ms-transform: matrix(0, -1, 5, 0, 200px, 50px);  /* IE 9 */
+			/* transform: matrix(0, 5, 5, 0, 200px, 50px);  IE 9 */
+			/* transform: matrix(200px, 200px, 200px, 200px, 200px, 50px);  IE 9 */
+			/* transform: matrix(0, 1, 0, 0, 1, 1);  IE 9 */
+            /* transform: translate(200px, 50px) rotate(180deg) scale(1.5) skew(0, 30deg);  Modern Browsers     */
+            transform:matrix(5, -7, 7, 15, 856, 555)
+	}
+    
+</style>
+</head>
+<body>
+    <div class="box">
+    	<img src="../yClqv.png" alt="Mushroom">
+    </div>
+</body>
+</html> 
